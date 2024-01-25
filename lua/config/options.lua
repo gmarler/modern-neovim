@@ -8,6 +8,7 @@ opt.completeopt = "menuone,noselect"
 opt.conceallevel = 0
 opt.confirm = true
 opt.cursorline = true
+opt.cursorcolumn = true
 opt.expandtab = true
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 opt.foldcolumn = "1" -- '0' is not bad
@@ -26,7 +27,7 @@ opt.mouse = "a"
 opt.number = true
 opt.pumblend = 10
 opt.pumheight = 10
-opt.relativenumber = true
+opt.relativenumber = false
 opt.scrollback = 100000
 opt.scrolloff = 8
 opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
@@ -54,5 +55,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 vim.g.markdown_recommended_style = 0
+
+vim.g.python3_host_prog = vim.env.HOME .. "/.pyenv/versions/neovim3/bin/python"
 
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })

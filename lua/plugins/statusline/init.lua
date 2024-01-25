@@ -3,7 +3,10 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = {
       "meuter/lualine-so-fancy.nvim",
-      { "Pheon-Dev/pigeon", opts = {} },
+      {
+        "Pheon-Dev/pigeon",
+        opts = {},
+      },
     },
     event = "VeryLazy",
     opts = function()
@@ -26,7 +29,7 @@ return {
           globalstatus = true,
         },
         sections = {
-          lualine_a = { { "fancy_mode", width = 3 } },
+          lualine_a = { { "fancy_mode", width = 8 } },
           lualine_b = { components.git_repo, "branch" },
           lualine_c = {
             "filename",
@@ -39,7 +42,9 @@ return {
             components.separator,
             components.lsp_client,
           },
-          lualine_x = { components.battery, components.spaces, "encoding", "fileformat", "filetype", "progress" },
+          -- This is somehow broken; seemingly components.battery
+          -- lualine_x = { components.battery, components.spaces, "encoding", "fileformat", "filetype", "progress" },
+          lualine_x = { components.spaces, "encoding", "fileformat", "filetype", "progress" },
           lualine_y = {},
           lualine_z = { "location" },
         },
@@ -51,7 +56,7 @@ return {
           lualine_y = {},
           lualine_z = {},
         },
-        extensions = { "nvim-tree", "toggleterm", "quickfix" },
+        -- extensions = { "nvim-tree", "toggleterm", "quickfix" },
       }
     end,
   },

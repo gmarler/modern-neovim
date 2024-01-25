@@ -4,10 +4,11 @@ return {
   event = "VeryLazy",
   opts = {
     projects = {
-      "~/workspace/alpha2phi/*",
-      "~/workspace/platform/*",
-      "~/workspace/temp/*",
-      "~/workspace/software/*",
+      "~/gitwork/*",
+      "~/dotfiles/",
+      "~/PycharmProjects/*",
+      "~/WebstormProjects/*",
+      "~/CLionProjects/*",
     },
   },
   init = function()

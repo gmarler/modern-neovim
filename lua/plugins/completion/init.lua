@@ -14,7 +14,7 @@ return {
         build = "./install.sh",
         enabled = false,
       },
-      { "jcdickinson/codeium.nvim", config = true, enabled = false },
+      -- { "jcdickinson/codeium.nvim", config = true, enabled = false },
       {
         "jcdickinson/http.nvim",
         build = "cargo build --workspace --release",
@@ -116,7 +116,7 @@ return {
         },
         sources = cmp.config.sources {
           { name = "nvim_lsp", group_index = 1, max_item_count = 15 },
-          { name = "codeium", group_index = 1 },
+          -- { name = "codeium", group_index = 1 },
           { name = "luasnip", group_index = 1, max_item_count = 8 },
           { name = "buffer", group_index = 2 },
           { name = "path", group_index = 2 },

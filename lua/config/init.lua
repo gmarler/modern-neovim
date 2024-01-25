@@ -4,9 +4,9 @@ return {
     mini_clue = false,
   },
   pde = {
-    ai = true,
-    angular = false,
-    cpp = false,
+    ai = false,
+    angular = true,
+    cpp = true,
     csharp = false,
     docker = true,
     elixir = false,
