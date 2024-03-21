@@ -51,6 +51,31 @@ return {
       end
     end,
   },
+  -- {
+  --   "ray-x/navigator.lua",
+  --   event = "VeryLazy",
+  --   dependencies = {
+  --     { "ray-x/guihua.lua" },
+  --     { "neovim/nvim-lspconfig" },
+  --   },
+  --   config = function()
+  --     require("navigator").setup {
+  --       lsp = {
+  --         -- This seemto mess up Go formatting:
+  --         format_on_save = false,
+  --         -- Do not show the sign on the sign column:
+  --         code_action = {
+  --           sign = false,
+  --         },
+  --         code_lens_action = {
+  --           sign = false,
+  --         },
+  --         -- Don't open the blasted quick fix window.
+  --         display_diagnostic_qf = false,
+  --       },
+  --     }
+  --   end,
+  -- },
   {
     "utilyre/barbecue.nvim",
     event = "VeryLazy",
